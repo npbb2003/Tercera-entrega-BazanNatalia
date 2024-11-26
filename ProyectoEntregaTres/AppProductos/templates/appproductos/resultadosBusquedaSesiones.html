@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado de la busqueda</title>
+</head>
+<body>
+    
+    <p>Resultados de la busqueda por la palabra clave {{nombre}}</p>
+    {% if sesiones %}
+    <ul>
+        {%for sesion in sesiones %}
+            <li>{{sesion.nombre}}</li>
+            <li>{{sesion.descripcion}}</li>
+            <li>{{sesion.precio}}</li>
+            
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+</html>

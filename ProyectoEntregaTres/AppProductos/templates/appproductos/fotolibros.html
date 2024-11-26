@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% extends "appproductos/index.html" %}  {% load static %}
+
+    {% block title %}Página de Inicio{% endblock %}
+
+    {% block contenidoQueCambia %}
+        <h3>Los fotolibros son la mejor manera de poder tener tus fotos</h3>
+        <h3>Vienen de tapa dura y blanda</h3>
+        <h3>Minimo con 10 hojas en adelante</h3>
+        <p>Por cualquier duda consultar el README.txt</p>
+    {% endblock %}
+</body>
+</html>

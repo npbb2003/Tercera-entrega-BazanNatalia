@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% extends "appproductos/index.html" %}  {% load static %}
+
+    {% block title %}Página de Inicio{% endblock %}
+
+    {% block contenidoQueCambia %}
+        <h3>Las sesiones fotograficas que estamos ofreciendo cubren desde la maternidad hasta el primer añito de tu bebe</h3>
+        <h3>Hay diferentes opciones que varian en cantidad de fotos y cambios de vestuarios</h3>
+        <h3>La entrega de las fotos es digital.</h3>
+        <p>Por cualquier duda consultar el README.txt</p>
+    {% endblock %}
+</body>
+</html>
